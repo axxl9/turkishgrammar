@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土耳其语两大复合语法架构 — 练习题、答案与翻译</title>
+    <style>
+        :root {
+            --primary-color: #e30a17;
+            --secondary-color: #003366;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --accent-bg: #fdf2f2;
+            --answer-bg: #f0f7ff;
+            --answer-border: #003366;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem 3rem 1rem;
+        }
+
+        .global-controls {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn:hover {
+            opacity: 0.95;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            font-size: 1.5rem;
+        }
+
+        .subsection-title {
+            color: var(--primary-color);
+            margin-top: 1.8rem;
+            font-size: 1.15rem;
+            background-color: #fff;
+            padding: 0.5rem 0.8rem;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 0.8rem 1rem;
+            background-color: #fafafa;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .question-box {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .translation-box {
+            color: #555;
+            font-size: 0.92rem;
+            margin-top: 0.4rem;
+        }
+
+        .toggle-btn {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background-color: var(--accent-bg);
+        }
+
+        .answer-container {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .answer-container.show {
+            display: block;
+        }
+
+        .answer-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+
+        .answer-text {
+            color: #000;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>土耳其语两大复合语法架构 — 练习题、答案与翻译</h1>
+    <p>包含 Dolaylı Aktarım（间接引语）与 Rivayet Kipi（-miş 转述系统）全套习题</p>
+</header>
+
+<div class="container">
+    <div class="global-controls">
+        <button class="btn" onclick="toggleAllAnswers(true)">展开所有答案</button>
+        <button class="btn" onclick="toggleAllAnswers(false)">隐藏所有答案</button>
+    </div>
+
+    <!-- SECTION A -->
+    <h2 class="section-title">A. 间接引语 (Dolaylı Aktarım)</h2>
+
+    <!-- A1 -->
+    <h3 class="subsection-title">A1. 动词一般形式练习 (Hitti II 10.1 改写练习)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Lee "İki yıldır Ankara'da yaşıyorum, Türk yemeklerine iyice alıştım." dedi.</div>
+            <div class="translation-box">原文翻译：李说：“我在安卡拉住了两年了，已经完全习惯土耳其菜了。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Lee iki yıldır Ankara'da yaşadığını, Türk yemeklerine iyice alıştığını söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Milli Eğitim Bakanlığı "Özel okul sınavları 17 Haziran'a ertelenmiştir." diye açıklama yaptı.</div>
+            <div class="translation-box">原文翻译：国民教育部声明道：“私立学校考试已推迟至6月17日。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Milli Eğitim Bakanlığı özel okul sınavlarının 17 Haziran'a ertelendiğini açıkladı.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ünlü şarkıcı "Artık müziği bırakacağım, çünkü daha sakin bir hayat istiyorum." diyerek herkesi şaşırttı.</div>
+            <div class="translation-box">原文翻译：著名歌手说“我将不再搞音乐了，因为我想过更平静的生活”，这让大家大吃一惊。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ünlü şarkıcı artık müziği bırakacağını, çünkü daha sakin bir hayat istediğini söyleyerek herkesi şaşırttı.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Öğretmenimiz "Sınav kağıtlarınızı henüz okumadım." dedi.</div>
+            <div class="translation-box">原文翻译：我们的老师说：“我还没有批改你们的试卷。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Öğretmenimiz sınav kağıtlarımızı henüz okumadığını söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Teknik direktör "İki futbolcuyla görüşmeler devam ediyor, bu isimleri size daha sonra açıklayacağız." dedi.</div>
+            <div class="translation-box">原文翻译：主教练说：“与两名球员的谈判仍在继续，我们稍后会向你们公布这些名字。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Teknik direktör iki futbolcuyla görüşmelerin devam ettiğini, bu isimleri bize daha sonra açıklayacaklarını söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A2 -->
+    <h3 class="subsection-title">A2. 是/否疑问句练习 (Hitti II 10.2 直接改间接)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ayşe, bana "Kara kedinin uğursuz olduğuna inanıyor musun?" diye sordu.</div>
+            <div class="translation-box">原文翻译：阿伊谢问我：“你相信黑猫不吉利吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ayşe bana kara kedinin uğursuz olduğuna inanıp inanmadığımı sordu.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ben, size "Yarınki toplantıya katılacak mısınız?" diye soruyorum.</div>
+            <div class="translation-box">原文翻译：我问你们：“你们会参加明天的会议吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ben size yarınki toplantıya katılıp katılmayacağınızı soruyorum.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Doktor, hastasına "Daha önce bu ilaçtan kullandınız mı?" diye sordu.</div>
+            <div class="translation-box">原文翻译：医生问病人：“您以前用过这种药吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Doktor hastasına daha önce bu ilacı kullanıp kullanmadığını sordu. (veya: ...bu ilaçtan kullanıp kullanmadığını sordu.)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Annesi, çocuğa "Yemeğini bitirdin mi?" diye sordu.</div>
+            <div class="translation-box">原文翻译：妈妈问孩子：“你吃完饭了吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Annesi çocuğa yemeğini bitirip bitirmediğini sordu.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Can, Gökçe'ye "Bana yardım edecek misin?" diye sordu.</div>
+            <div class="translation-box">原文翻译：詹问格克切：“你会帮我吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Can Gökçe'ye kendisine yardım edip etmeyeceğini sordu.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A3 -->
+    <h3 class="subsection-title">A3. 特殊疑问句练习 (间接改直接)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Manava bir kilo elmanın ne kadar olduğunu sordum.</div>
+            <div class="translation-box">原文翻译：我问水果摊主一公斤苹果多少钱。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Manava "Bir kilo elma ne kadar?" diye sordum.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Onlara nereden geldiklerini sordum.</div>
+            <div class="translation-box">原文翻译：我问他们从哪里来。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Onlara "Nereden geldiniz?" diye sordum.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ona partideki uzun saçlı delikanlının kim olduğunu sordum. (veya: Ona partiye kiminle gittiğini sordum.)</div>
+            <div class="translation-box">原文翻译：我问他/她和谁一起去参加的派对。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ona "Partiye kiminle gittin?" diye sordum.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Küçük Ali bakkala 1 liraya kaç tane çikolata alabileceğini sordu.</div>
+            <div class="translation-box">原文翻译：小阿里问杂货店老板1里拉能买几块巧克力。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Küçük Ali bakkala "1 liraya kaç tane çikolata alabilirim?" diye sordu.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A4 -->
+    <h3 class="subsection-title">A4. 名词/形容词 + olmak 练习 (Hitti II 10.3 改写练习)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Polis "Bu yol trafiğe kapalı." dedi.</div>
+            <div class="translation-box">原文翻译：警察说：“这条路封闭交通。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Polis bu yolun trafiğe kapalı olduğunu söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Yeliz "Uzun zamandır hiç keyfim yok." dedi.</div>
+            <div class="translation-box">原文翻译：耶利兹说：“很久以来我一点心情都没有。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Yeliz uzun zamandır hiç keyfinin olmadığını söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Hemşire hastaya "İki gün sonra taburcusunuz." dedi.</div>
+            <div class="translation-box">原文翻译：护士对病人说：“您两天后就可以出院了。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Hemşire hastaya iki gün sonra taburcu olduğunu söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: "Nasılsın?" diye merak ettim. İyileştin mi?</div>
+            <div class="translation-box">原文翻译：我很想知道“你怎么样了？痊愈了吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Nasıl olduğunu ve iyileşip iyileşmediğini merak ettim.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ev sahibi "Ev gayet bakımlı." diyor.</div>
+            <div class="translation-box">原文翻译：房东说：“房子保养得非常好。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ev sahibi evin gayet bakımlı olduğunu söylüyor.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A5 -->
+    <h3 class="subsection-title">A5. 必须、意愿、提议练习 (Hitti II 10.3)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Müdür bize "Toplantıya mutlaka katılmalısınız." dedi.</div>
+            <div class="translation-box">原文翻译：经理对我们说：“你们必须参加会议。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Müdür bize toplantıya mutlaka katılmamız gerektiğini söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Öğretmen öğrencilerine "Daha çok çalışmalısınız." dedi.</div>
+            <div class="translation-box">原文翻译：老师对学生们说：“你们应该更加努力学习。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Öğretmen öğrencilerine daha çok çalışmaları gerektiğini söyledi.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Görevli bana "Size yardım edeyim mi?" diye sordu.</div>
+            <div class="translation-box">原文翻译：工作人员问我：“需要我帮您吗？”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Görevli bana yardım etmek isteyip istemediğimi sordu (veya: bana yardım etmeyi teklif etti).</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ali "Hesabı ben ödeyeyim." dedi.</div>
+            <div class="translation-box">原文翻译：阿里说：“我来买单吧。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ali hesabı kendisi ödemek istediğini söyledi (veya: hesabı ödemeyi teklif etti).</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ayşe'yi arayıp "Başka bir gün buluşalım." diyeceğim.</div>
+            <div class="translation-box">原文翻译：我会给阿伊谢打电话说：“我们改天再见吧。”</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Ayşe'yi arayıp başka bir gün buluşmayı teklif edeceğim (veya: buluşmamızı söyleyeceğim).</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECTION B -->
+    <h2 class="section-title">B. -miş 转述系统 (Rivayet Kipi)</h2>
+
+    <!-- B1 -->
+    <h3 class="subsection-title">B1. Past Tens (Belirsiz Geçmiş) 填空练习</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Kilo almışsın. Artık spor yapmıyor musun?</div>
+            <div class="translation-box">原文翻译：看来你发胖了。你现在不做运动了吗？</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Kilo almışsın. Artık spor yapmıyor musun?</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Babam gençken şarkıcı olmak iste______ ama dedem izin ver______.</div>
+            <div class="translation-box">原文翻译：听说我爸爸年轻时想成为歌手，但我爷爷没同意。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: istemiş / vermemiş</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Size "Bugün gelin." demedim. Siz beni yanlış anla______.</div>
+            <div class="translation-box">原文翻译：我没对你们说“今天来”。看来你们误解我了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: anlamışsınız</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Bana biraz borç verir misin? Cüzdanımı evde unut______.</div>
+            <div class="translation-box">原文翻译：你能借我点钱吗？我才发现我把钱包忘在家里了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: unutmuşum</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Yemeklerimden yemiyor musun? Yoksa güzel yap______?</div>
+            <div class="translation-box">原文翻译：你不吃我做的菜吗？难道是我做得不好吃吗？</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: yapamamış mıyım / yapmamış mıyım</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B2 -->
+    <h3 class="subsection-title">B2. 系词句转述练习 (-(y)miş)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Dün akşam Okan ve Eray sinemaya gitmişler. Film çok korkunç______.</div>
+            <div class="translation-box">原文翻译：昨天晚上欧坎和埃雷去看了电影。听说那部电影非常恐怖。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: korkunçmuş</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Annem gençken çok zayıf______.</div>
+            <div class="translation-box">原文翻译：听说我妈妈年轻时非常瘦。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: zayıfmış</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ben çocukken çok uslu______, hiç yaramaz______.</div>
+            <div class="translation-box">原文翻译：听说我小时候很乖，一点也不调皮。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: usluymuşum / yaramaz değilmişim</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Duyduğuma göre siz eskiden çok ünlü bir futbolcu______.</div>
+            <div class="translation-box">原文翻译：我听说您以前是一位非常著名的足球运动员。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: futbolcuymuşsunuz</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Benim babam gençken çok yakışıklı______, seninki de yakışıklı______?</div>
+            <div class="translation-box">原文翻译：听说我爸爸年轻时很帅，你爸爸当时也帅吗？</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: yakışıklıymış / yakışıklı mıymış</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B3 -->
+    <h3 class="subsection-title">B3. 现在进行时转述练习 (-(İ)yormuş)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Dün lisedeki arkadaşlarımdan biriyle karşılaştım. Şimdi bir şirkette yöneticilik yap______.</div>
+            <div class="translation-box">原文翻译：昨天我碰到了高中同学之一。听说他现在在一家公司做高管。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: yapıyormuş</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Bu sabah öğretmenin aradı, söylediğine göre derslere hiç git______.</div>
+            <div class="translation-box">原文翻译：今天早上你的老师打电话来了，据他所说，你根本不去上课。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: gitmiyormuşsun</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Anneniz söyledi, siz hiç süt iç______.</div>
+            <div class="translation-box">原文翻译：你们妈妈说了，你们平时一点牛奶都不喝。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: içmiyormuşsunuz</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Ben uykuda konuş______.</div>
+            <div class="translation-box">原文翻译：听说我睡觉时会说梦话。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: konuşuyormuşum</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: O eskiden nerede yaşa______?</div>
+            <div class="translation-box">原文翻译：听说他以前住在哪里？</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: yaşıyormuş</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B4 -->
+    <h3 class="subsection-title">B4. 将来时转述练习 (-(y)EcEkmiş)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Televizyondan öğrendiğime göre havalar yakında soğuk______.</div>
+            <div class="translation-box">原文翻译：我从电视上了解到，天气近期听说要变冷了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: soğuyacakmış</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Duyduğuma göre kardeşin yeni bir iş ara______.</div>
+            <div class="translation-box">原文翻译：我听说你兄弟要去找一份新工作。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: arayacakmış</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Doktorum bana çok kızıyor. Bundan sonra bir sigara bile iç______.</div>
+            <div class="translation-box">原文翻译：我的医生对我非常生气。听说我以后连一支烟都不能抽了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: içmeyecekmişim</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: İnsanlığın gelecek yüzyıldaki en büyük sorunu susuzluk ol______.</div>
+            <div class="translation-box">原文翻译：据预测，下个世纪人类最大的问题将会是缺水。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: olacakmış</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Yılbaşı için Deniz Restoran'a gidelim. Duyduğuma göre orada çok iyi bir grup çal______.</div>
+            <div class="translation-box">原文翻译：跨年我们去海洋餐厅吧。我听说那里将会有个很棒的乐队演出。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: çalacakmış</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B5 -->
+    <h3 class="subsection-title">B5. 一般时转述练习 (Geniş Zamanın Rivayeti)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Turistler antik tiyatroyu ziyaret eder.</div>
+            <div class="translation-box">原文翻译：游客们参观古剧场。（直接客观陈述）</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Turistler antik tiyatroyu ziyaret edermiş.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Tiyatroda pek çok oyunlar oynanır.</div>
+            <div class="translation-box">原文翻译：剧院里上演着许多剧目。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Tiyatroda pek çok oyunlar oynanırmış.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Noel Baba, Myra'da yaşar.</div>
+            <div class="translation-box">原文翻译：圣诞老人生活在米拉。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Noel Baba, Myra'da yaşarmış.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Noel Baba, Myra'da piskoposluk yapar.</div>
+            <div class="translation-box">原文翻译：圣诞老人在米拉担任主教。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Noel Baba, Myra'da piskoposluk yaparmış.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Myra'da sık sık savaşlar olur.</div>
+            <div class="translation-box">原文翻译：米拉经常发生战争。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Myra'da sık sık savaşlar olurmuş.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B7 -->
+    <h3 class="subsection-title">B7. 条件转述练习 (Dilek-şart Kipinin Rivayeti)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Çok çalışsa, sınıfını geçerdi.</div>
+            <div class="translation-box">原文翻译：如果他当时多学学，就能通过考试了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Çok çalışsaymış, sınıfını geçermiş.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Erken kalksa, otobüse yetişirdi.</div>
+            <div class="translation-box">原文翻译：如果他早点起，就能赶上公交车了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Erken kalksaymış, otobüse yetişirmiş.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Plânlı çalışsaydım, işi yetiştirirdim.</div>
+            <div class="translation-box">原文翻译：如果我当时有计划地工作，就能赶完工了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Plânlı çalışsaymışım, işi yetiştirirmişim.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Tutumlu olsam, zengin olurdum.</div>
+            <div class="translation-box">原文翻译：如果我节俭一些，我就变成富翁了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Tutumlu olsaymışım, zengin olurmuşum.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Çok yemeseydik, kilo almazdık.</div>
+            <div class="translation-box">原文翻译：如果我们当时没吃那么多，就不会发胖了。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Çok yemeseymişiz, kilo almazmışız.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B8 -->
+    <h3 class="subsection-title">B8. 必须语气转述练习 (Gereklilik Kipinin Rivayeti)</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Güneşte az kalmalısınız.</div>
+            <div class="translation-box">原文翻译：你们应该少晒太阳。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Güneşte az kalmalıymışsınız.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Yat kıyıya yaklaşmamalı.</div>
+            <div class="translation-box">原文翻译：游艇不应该靠近海岸。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Yat kıyıya yaklaşmamalıymış.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Gülay Hanım çay pişirmeli.</div>
+            <div class="translation-box">原文翻译：居莱女士应该煮茶。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Gülay Hanım çay pişirmeliymış.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Antik tiyatroya gitmeliyiz.</div>
+            <div class="translation-box">原文翻译：我们应该去古剧场。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Antik tiyatroya gitmeliymişiz.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: Tarih kitabı okumalıyız.</div>
+            <div class="translation-box">原文翻译：我们应该读历史书。</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: Tarih kitabı okumalıymışız.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B10 -->
+    <h3 class="subsection-title">B10. -miş 分词/定语练习</h3>
+
+    <div class="card">
+        <div class="card-header"><span>题目 1</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: solmak + çiçek</div>
+            <div class="translation-box">原文翻译：枯萎 + 花</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: solmuş çiçek</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 2</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: koparılmak + çiçek</div>
+            <div class="translation-box">原文翻译：被摘下 + 花</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: koparılmış çiçek</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 3</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: bozulmak + saat</div>
+            <div class="translation-box">原文翻译：坏掉 + 表</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: bozulmuş saat</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 4</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: okunmak + kitap</div>
+            <div class="translation-box">原文翻译：被阅读 + 书</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: okunmuş kitap</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>题目 5</span><button class="toggle-btn" onclick="toggleAnswer(this)">显示答案</button></div>
+        <div class="card-body">
+            <div class="question-box">Türkçe: yazılmak + mektup</div>
+            <div class="translation-box">原文翻译：被书写 + 信件</div>
+            <div class="answer-container">
+                <div class="answer-title">正确答案</div>
+                <div class="answer-text">Cevap: yazılmış mektup</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // 单题答案：只控制当前题目的答案，不影响其他题目
+    function toggleAnswer(btn) {
+        const card = btn.closest('.card');
+        const answerContainer = card.querySelector('.answer-container');
+
+        const isShown = answerContainer.classList.toggle('show');
+        btn.textContent = isShown ? '隐藏答案' : '显示答案';
+    }
+
+    // 全部答案：统一展开或隐藏所有题目的答案
+    function toggleAllAnswers(show) {
+        document.querySelectorAll('.card').forEach(card => {
+            const container = card.querySelector('.answer-container');
+            const button = card.querySelector('.toggle-btn');
+
+            if (!container || !button) return;
+
+            container.classList.toggle('show', show);
+            button.textContent = show ? '隐藏答案' : '显示答案';
+        });
+    }
+</script>
+
+</body>
+</html>
